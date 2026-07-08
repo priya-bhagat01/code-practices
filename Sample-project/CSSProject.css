@@ -1,0 +1,19 @@
+body {
+	background-color: #252529;
+	font-family: 'PT Sans' , Sans-serif;
+    color: #fff ;
+    margin: 0 ;
+    padding: 0;
+    line-height: 1.6;
+}
+a    {
+	text-decoration: none;
+	color: #ccc
+}
+#showcase {
+	margin: 0;
+	padding: 0;
+	background: url('https://www.magnific.com/free-photos-vectors/sports-shop');
+	width: 100%;
+	height: 100vh ;
+}

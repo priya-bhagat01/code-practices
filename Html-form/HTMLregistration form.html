@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>HTML Registration Form</title>
+     <center><h1>Employee Registration Form</h1></center>
+<br><hr>
+</head>
+<body>
+     <form>
+        <label>Firstname:</label>
+        <input type="text" name="Firstname" placeholder="Firstname" size="10" required=""><br><br>
+        <label>Middlename:</label>
+        <input type="text" name="Middlename" placeholder="Middlename" size="10" required=""><br><br>
+        <label>Lastname:</label>
+        <input type="text" name="Lastname" placeholder="Lastname" size="10" required=""><br><br>
+
+     <div><label>Department:</label>
+     <select required="">
+     <option value="Course">Department</option><br>
+
+     <option value="BCA">Management</option><br> 
+
+     <option value="BBA">Human Resource</option><br> 
+
+     <option value="B.Tech">Customer Support</option><br> 
+
+     <option value="MBA">Development</option><br> 
+
+     <option value="MCA">Business</option><br> 
+
+     <option value="M.Tech">Corporate Finance</option><br> 
+      </select></div><br>
+     <div><label>Gender:</label><br>
+      <input type="radio" name="Gender" value="Female">Female<br>
+      <input type="radio" name="Gender" value="Male">Male<br>
+      <input type="radio" name="Gender" value="Other">Other<br></div>
+     <div> <label>Phone:</label>
+      <input type="text" name="Country Code" placeholder="Country Code" value="+91" size="2">
+      <input type="Tel" name="Phone" pattern="[0-9]{4}-[0-9]{6}" placeholder="1234-567890" size="11" required><br><br></div>
+      <label>Current Address:</label>
+      <textarea rows="5" cols="80" required="" ><! --textarea gives space to write paragraph or address--></textarea><br><br>
+      <label>Drop Your Resume:</label>
+      <input type="file" name="myFile" required=""><br><br>
+      <label>Email:</label>
+      <input type="Email" name="Enter Email" placeholder="Enter Email" required=""><br><br>
+       <label>Password:</label>
+      <input type="Password" name="Enter Password" placeholder="Enter Password" required=""><br><br>
+       <label>Re-type Password:</label>
+      <input type="Password" name="Retype Password" placeholder="Retype Password" required=""><br><br>
+      <input type="submit" name="Register" value="Register">
+ </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
