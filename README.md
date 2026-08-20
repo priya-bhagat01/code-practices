@@ -7,7 +7,8 @@ Welcome to my practice hub! This repository serves as a personal journal of my c
 Inside this repository, you'll find my practice code neatly organized by topic:
 
 ### 🧠 [JavaScript](./JavaScript/)
-* **fizzbuzz.js** - Refactoring the classic FizzBuzz interview problem using functions that return structured data arrays rather than printing directly to the console.
+* **FizzBuzzLoop.html** - My first version using a straight `for` loop to log directly to the console.
+* **FizzBuzzReturn.html** - My upgraded version, wrapping the logic inside a reusable function that returns a structured data array.
 * **Calculator** - A functional calculator practice sample application practicing user input handling, mathematical evaluations, and interactive UI states.
 * **Rock-Paper-Scissors** - A classic game practice sample implementing core JavaScript logic, random computer choices, score tracking, and conditional win/loss outcomes.
 
