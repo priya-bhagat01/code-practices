@@ -14,3 +14,10 @@ print(short_name)  # Output: Pri
 
 character1 = name[1]  # Accessing the first character of the string
 print(character1)  # Output: r
+
+#Negative indexing starts from the end of the string
+character2 = name[-1]  # Accessing the last character of the string
+print(character2)  # Output: a
+print(name[-4: -1])  # Output: riy
+#corresponding to above example, -4 is 1 and 1 is -4, -3 is 2 and 2 is -3, -2 is 3 and 3 is -2, -1 is 4 and 4 is -1
+print(name[1:4])  # Output: riy
