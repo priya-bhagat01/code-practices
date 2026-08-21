@@ -21,3 +21,7 @@ print(character2)  # Output: a
 print(name[-4: -1])  # Output: riy
 #corresponding to above example, -4 is 1 and 1 is -4, -3 is 2 and 2 is -3, -2 is 3 and 3 is -2, -1 is 4 and 4 is -1
 print(name[1:4])  # Output: riy
+
+print(name[:]) # Output: Priya (prints the whole string)
+print(name[:4]) # Output: Priy (prints from start to index 3)
+print(name[1:]) # Output: riya (prints from index 1 to end)
