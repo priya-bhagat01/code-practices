@@ -25,3 +25,9 @@ print(name[1:4])  # Output: riy
 print(name[:]) # Output: Priya (prints the whole string)
 print(name[:4]) # Output: Priy (prints from start to index 3)
 print(name[1:]) # Output: riya (prints from index 1 to end)
+
+a = "0123456789"
+print(a[1:7:3])  # Output: 14 (starts from index 1 to 6 with a step of 3)
+
+b = "abcdefghijklmnopqrstuvwxyz"
+print(b[1:9:4])  # Output: bf (starts from index 1 to 8 with a step of 4)
