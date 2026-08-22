@@ -2,7 +2,7 @@
 # Initialize an empty list to store the marks
 marks = []
 
-m1 = int(input("Enter the marks of student 1: "))
+m1 = int(input("Enter the marks of student 1: ")) #if we dont convert the input to int, it will be stored as string and sorting will not work properly
 marks.append(m1)
 
 m2 = int(input("Enter the marks of student 2: "))
