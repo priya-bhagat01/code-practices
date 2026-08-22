@@ -4,4 +4,4 @@ print(name.find("  "))
 
 #Write program to replace double spaces with single space
 name = name.replace("  ", " ")
-print(name)
+print(name) #Strings are immutable which means we cannot change the original string. We can only create a new string with the desired changes.
