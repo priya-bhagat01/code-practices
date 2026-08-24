@@ -4,3 +4,7 @@ b = int(input("Enter number 2: "))
 c = int(input("Enter number 3: "))
 d = int(input("Enter number 4: "))
 print("The sum of the numbers is:", a + b + c + d)
+
+#Another way to do so
+l = [1, 2, 3, 4]
+print(sum(l))
