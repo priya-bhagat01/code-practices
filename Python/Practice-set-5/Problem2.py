@@ -9,5 +9,27 @@ f = int(input("Enter number 6: "))
 g = int(input("Enter number 7: "))
 h = int(input("Enter number 8: "))
 
-set = {a, b, c, d, e, f, g, h}
-print(set)
+my_set = {a, b, c, d, e, f, g, h}
+print(my_set)
+
+#OR
+
+s = set()
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+n = input("Enter number:")
+s.add(int(n))
+
+print(s)
