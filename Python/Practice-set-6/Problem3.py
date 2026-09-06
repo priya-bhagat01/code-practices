@@ -13,6 +13,8 @@ if("make a lot of money" in word or "buy now" in word or "subscribe this" in wor
 else:
     print("This comment is clean!")
 
+#OR 
+
 words = input("Enter a statement: ")
 
 if "make a lot of money" in words:
