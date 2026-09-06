@@ -10,13 +10,21 @@ percentage = (totalMarks/300)*100
 
 if(studentMarks1 > 33):
     print("You are pass in Maths")
+else:
+    print("You failed in Maths")
 
 if(studentMarks2 > 33):
     print("You are pass in Physics")
+else:
+    print("You failed in Physics")
 
 if(studentMarks3 > 33):
     print("You are pass in Chemistry")
+else:
+    print("You failed in Chemistry")
 
 if(totalMarks > 40 and studentMarks1 > 33 and studentMarks2 > 33 and studentMarks3 > 33):
     print("Congratulations you are passed")
     print("Your percentage is:", percentage)
+else:
+    print("You failed, Better luck next time")
