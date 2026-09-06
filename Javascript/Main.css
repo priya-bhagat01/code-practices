@@ -1,0 +1,41 @@
+html ,
+body{
+	margin: 0;
+	padding: 0;
+	/*background-color: #212143;*/
+	/*background-color: #3C0366;*/
+	background-color: #080123;
+	margin-left: 55px;
+	margin-top: 15px;
+	/*margin-right: 25px;*/
+	font-family: Roboto;/*
+	overflow: hidden;*/
+}
+img{
+	mix-blend-mode: screen;
+}
+.input-track{
+	text-decoration: none;
+	appearance: none;
+	background: transparent;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	display: inline-block;
+	width: 30px;
+}
+.main-tracker{
+	max-width: 1200px;
+	display: flex;
+	flex: 1;
+	margin: 0 auto;
+	padding: 20px;
+}
+* {
+	box-sizing: border-box;
+}

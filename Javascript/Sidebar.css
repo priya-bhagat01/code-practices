@@ -1,0 +1,82 @@
+.side-bar{
+	display: flex;
+	flex-direction: column;
+	width: 85px;
+	align-items: center;
+	overflow: hidden;
+	object-fit: contain;
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	z-index: 1000;
+	/*background-color: #161637;*/
+	background-color: #040012;
+	/*background-color: #290245;*/
+	color: #fff;
+	border-right: 0.1px solid dimgrey;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.nav{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	flex: 1;
+	width: 100%;
+	max-height: calc(100vh - 120px); /* Prevents overflow */
+}
+.home-img ,
+.toggle-bar-img ,
+.stats-img ,
+.tasks-img ,
+.calendar-img ,
+.notes-img ,
+.settings-img {
+	width: 28px;
+	height: 28px;
+	object-fit: contain;
+	cursor: pointer;
+	/*mix-blend-mode: multiply;*/ /*Removes solid white bg*/
+	mix-blend-mode: screen; /*Removes solid black bg*/
+	/*background-color: #3C0366;*/
+}
+.toggle-bar-img{
+	width: 40px;
+	height: 40px;
+	margin-top: 21px;
+}
+.calendar-img{
+	width: 40px;
+	height: 50px;
+}
+.home-img{
+	margin-left: 6px;
+}
+.side-bar p{
+	margin: 0;
+	padding: 0;
+}
+.calendar-img{
+	margin-left: 5px;
+}
+.settings-img{
+	margin-left: 7px;
+}
+.home ,
+.stats ,
+.tasks ,
+.calendar ,
+.notes {
+	transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.home:active ,
+.stats:active ,
+.tasks:active ,
+.calendar:active ,
+.notes:active{
+	transform: scale(0.97);
+	background-color: #3C0366;
+	width: 50px;
+	height: 50px;
+}

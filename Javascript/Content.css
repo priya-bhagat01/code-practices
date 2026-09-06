@@ -1,0 +1,257 @@
+.tracker-grid{
+	display: grid;
+	/*grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));*/
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+.goals{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+}
+.notes-goals{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+}
+.study-tracker ,
+.tasks-tracker ,
+.score-tracker ,
+.streak-tracker ,
+.water-tracker ,
+.steps-tracker ,
+.schedule-tracker ,
+.productivity-tracker ,
+.notes-tracker ,
+.upcoming-tracker{
+	padding-left: 20px;
+	color: #fff;
+	border: 0.2px solid dimgray;
+	width: 100%;
+	border-radius: 15px;
+	object-fit: contain;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 1.0);
+	background-color: #212143;
+}
+.study-tracker ,
+.tasks-tracker ,
+.score-tracker ,
+.streak-tracker ,
+.water-tracker ,
+.steps-tracker{
+	width: 100%;
+	min-height: 140px;
+	box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.tracker-topic{
+	font-size: 16px;
+	display: inline-block;
+}
+.text-grid{
+	display: block;
+}
+.streak-tracker{
+	padding-right: 0;
+	margin-right: 0;
+}
+.tracker-image{
+	padding-top: 28px;
+	display: flex;
+	object-fit: contain;
+	mix-blend-mode: screen;
+	padding-right: 0;
+	margin-right: 0;
+}
+.study-line-tracker ,
+.tasks-line-tracker ,
+.score-image-tracker ,
+.streak-image ,
+.water-image ,
+.steps-image {
+	width: 120px;
+}
+.track-input{
+	padding-bottom: 20px;
+}
+.streak-image{
+	display: inline-block;
+	width: 90px;
+	padding-right: 0;
+	margin-right: 0;
+}
+.date{
+	display: flex;
+	vertical-align: top;
+	justify-content: flex-start;
+}
+.greeting{
+	display: inline-block;
+	padding-bottom: 80px;
+	vertical-align: top;
+}
+.fire-image{
+	display: inline-block;
+	width: 55px;
+	vertical-align: top;
+}
+.study-tracker .text-grid , 
+.tasks-tracker .text-grid ,
+.score-tracker .text-grid{
+	display: block;
+	width: 100px;
+}
+.streak-tracker .text-grid{
+	display: block;
+}
+.water-image{
+	margin-top: 25px;
+	width: 50px;
+	height: 50px;
+	padding-right: 0;
+	margin-right: 0;
+}
+.water-tracker .text-grid{
+	display: block;
+}/*
+.steps-tracker .tracker-image{
+	filter: invert(1);  1. Invert the background to black so 'screen' can remove it 
+	mix-blend-mode: screen;
+}
+.steps-image{
+	filter: invert(1);  3. Invert the shoe back to its original black and white colors 
+}
+.steps-image{
+	filter: contrast(100%) brightness(100%);  1. Makes the pure white background transparent 
+	mix-blend-mode: color-burn;  Targets the background wrapper instead 
+}
+.steps-image{
+	  This creates a precise diagonal clip that slices off the white corners 
+	clip-path: polygon(25% 10%, 75% 20%, 96% 82%, 78% 90%, 5% 42%);
+	 Optional: slightly scale it if the edges look too tight 
+	transform: scale(1.05); 
+}*/
+.steps-image{
+	width: 50px;
+	height: 50px;
+	margin-right: 0;
+	padding-right: 0;
+	margin-top: 30px;
+}
+.steps-tracker .text-grid{
+	display: block;
+}
+.schedule-tracker ,
+.productivity-tracker ,
+.notes-tracker ,
+.upcoming-tracker{
+	/*grid-column: span 2; *\ /*Takes up 2 grid slots instead of 1*/
+  width: 100%;
+  box-sizing: border-box;
+}
+.productivity-tracker ,
+.upcoming-tracker{
+	width: 100%;
+}
+ul ,
+ul li ,
+.time{
+	display: inline-block;
+	color: white;
+}
+ul{
+}
+ul li{
+	margin-left: 20px;
+}
+/*ul li:nth-child(1)::marker { color: #ff5733; }
+  ul li:nth-child(2)::marker { color: #33ff57; }
+  ul li:nth-child(3)::marker { color: #3357ff; }
+  ul li:nth-child(4)::marker { color: #f333ff; }
+  ul li:nth-child(5)::marker { color: #ffbf00; }
+  ul li:nth-child(6)::marker { color: #3C0366; }*/
+.hours{
+	margin-left: 0;
+	padding-left: 0;
+}
+.hours-topic{
+	margin-bottom: 20px;
+	margin-left: 0;
+	padding-left: 0;
+}
+.productivity-tracker .tracker-topic ,
+.productivity-tracker .track-input ,
+.notes-tracker .tracker-topic ,
+.notes-tracker .track-notes ,
+.upcoming-tracker .tracker-topic ,
+.upcoming-tracker .track-upcomer{
+	display: inline-block;
+}
+.productivity-tracker .tracker-topic{
+}
+.notes-tracker .tracker-topic{
+}
+.upcoming-tracker .tracker-topic{
+}
+.week{
+	background-color: #080123;
+	padding: 8px;
+	color: white;
+	border-radius: 5px;
+	border: none;
+}
+.days ,
+.days-topic ,
+.days li{
+	display: inline-block;
+}
+.days{
+}
+.note-img ,
+.first-notes-img ,
+.second-notes-img{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+.first-notes p ,
+.second-notes p{
+	display: inline-block;
+}
+.first-notes ,
+.second-notes{
+	margin-bottom: 20px;
+}
+.note-title{
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	vertical-align: top;
+}
+.note-time{
+	margin: 0;
+	padding: 0;
+	margin-left: 34px;
+	font-weight: lighter;
+}
+.Tasks input ,
+.Tasks p{
+	display: inline-block;
+}
+input[type ="checkbox"]{
+  cursor: pointer;
+}
+.first-task{
+	margin-left: 80px;
+}
+.second-task{
+	margin-left: 130px;
+}
+.third-task{
+	margin-left: 142px;
+}
