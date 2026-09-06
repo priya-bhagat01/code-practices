@@ -16,3 +16,12 @@ if(a > 9):
     print("greater")
 else: 
     print("lesser")
+
+#Program to print yes when age entered by user is greater than or qual to 18
+b = int(input("Enter your age:"))
+if(b >= 18):
+    print("You are above age of consent")
+elif(b < 0):
+    print("You are entering an invalid age")
+else:
+    print("You are below age of consent")
