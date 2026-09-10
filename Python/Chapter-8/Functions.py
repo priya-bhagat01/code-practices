@@ -3,14 +3,24 @@
 #to keep track on which piece of code is doing  what
 #Function can be reused by programmer in given program
 
-'''
-Syntax:
+
+#Syntax:
 def func1():
     print("hello")
 func1() #this is called function call
-'''
+
 
 #Program to greet user with "Good Day" using function
 def greet():
     print("Good Day")
 greet() 
+
+#Types of function
+
+#Built in function: Already present in python
+print("A")
+len(4)
+range(1, 11)
+
+#User defined function: Defined by user
+func1()
