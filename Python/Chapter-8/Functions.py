@@ -19,8 +19,27 @@ greet()
 
 #Built in function: Already present in python
 print("A")
-len(4)
-range(1, 11)
+#len()
+#range(1, 11)
 
 #User defined function: Defined by user
 func1()
+
+#Function with arguments
+#Function can accept some values it can work with. 
+#We can put these values of parentheses
+#Function can return values as shown
+
+def greet(name):
+    gr = "hello, " + name
+    return gr
+a = greet("Harry")
+print(a)
+
+def goodDay(name, ending):
+    print("Good Day, " + name)
+    print(ending)
+    return goodDay
+
+a = goodDay("Harry", "Thank You")
+goodDay("Divya", "Thanks")
