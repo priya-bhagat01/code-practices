@@ -43,3 +43,22 @@ def goodDay(name, ending):
 
 a = goodDay("Harry", "Thank You")
 goodDay("Divya", "Thanks")
+
+#Default parameter value
+
+#We can have value as default argument in function
+#If we specify name = "Stranger" in line containing def, 
+#this value is used when no argument is passed
+
+def greet(name = "stranger"):
+    print("Hello, " + name)
+
+greet() #name will be "stranger" in function body(default)
+greet("Priya") #name will be "Priya" in function body(passed)
+
+def goodday(name, ending = "Thank you"):
+    print(f"Good day, {name}")
+    print(ending)
+
+goodday("Harry") #prints Good day, Harry, Thank you
+
