@@ -13,9 +13,11 @@ def removeWord(n):
 removeWord(n)
 
 def rem(l, word):
+    p = []
     for item in l:
-        l.remove(word)
-        return l
+        if not(item == word):
+            p.append(item.strip(word))
+    return p
 
 l = ["Harry", "Rohan", "Shubham", "an"]
 print(rem(l, "an"))
