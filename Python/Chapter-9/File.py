@@ -33,3 +33,15 @@ f = open("file.txt")
 data = f.read()
 print(data)
 f.close()
+
+#Other methods to read file
+#We can also use f.readline() function to read one following line at time
+#f.readline() #Read one line from file
+
+#Modes of opening file
+#r - open for reading
+#w - open for writing
+#a - open for appending
+#+ - open for updating
+#'rb' will open for read in binary mode
+#'rt' will open for read in text mode
