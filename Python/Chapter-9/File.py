@@ -45,3 +45,12 @@ f.close()
 #+ - open for updating
 #'rb' will open for read in binary mode
 #'rt' will open for read in text mode
+
+p = open("file.txt")
+b = open("file.txt")
+line = p.readline() #Reads first line
+lines = b.readlines() #Reads lines one by one
+print(line)
+print(lines)
+p.close
+b.close
