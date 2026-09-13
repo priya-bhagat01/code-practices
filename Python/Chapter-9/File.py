@@ -48,9 +48,24 @@ f.close()
 
 p = open("file.txt")
 b = open("file.txt")
-line = p.readline() #Reads first line
-lines = b.readlines() #Reads lines one by one
-print(line)
+line1 = p.readline() #Reads first line returns a string
+line2 = p.readline() #Reads second line
+line3 = p.readline() #Reads third line
+line4 = p.readline() #Reads fourth line
+lines = b.readlines() #Reads lines one by one returns a list
+print(line1)
+print(line2)
+print(line3)
+print(line4)
 print(lines)
 p.close
 b.close
+
+#OR
+
+s = open("file.txt")
+lane = s.readline()
+while lane != "":
+    print(lane)
+    lane = s.readline()
+s.close()
