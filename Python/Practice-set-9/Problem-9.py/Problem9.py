@@ -10,4 +10,4 @@ if content1 == content2:
     print("Yes these files are identical")
 
 else:
-    print("Yes these files are identical")
+    print("Yes these files are not identical")
