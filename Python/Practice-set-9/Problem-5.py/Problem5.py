@@ -6,7 +6,7 @@ with open("Problem-5.py/File.txt", "r") as f:
     content = f.read()
 
 for w in words:
-    content = content.replace(w, "######")
+    content = content.replace(w, "#" * len(w))
 
 with open("Problem-5.py/File.txt", "w") as f:
     f.write(content)
