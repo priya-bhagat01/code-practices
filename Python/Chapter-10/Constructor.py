@@ -14,7 +14,10 @@ class Employee:
     language = "Python"
     salary = 1200000
 
-    def __init__(self):   #dunner method which is automatically called
+    def __init__(self, name, salary, language):   #dunner method which is automatically called
+        self.name = name
+        self.salary = salary
+        self.language = language
         print("I am creating an object")
     
     def getInfo(self): 
@@ -24,10 +27,10 @@ class Employee:
     def greet():
         print("Good Morning")
 
-harry = Employee()
-harry.name = "Harry"
-print(harry.name, harry.salary)
+harry = Employee("Priya", 40000000, "JavaScript")
+#harry.name = "Harry"
+print(harry.name, harry.salary, harry.language)
 harry.greet()
 harry.getInfo()
 
-rohan = Employee()
+#rohan = Employee()
