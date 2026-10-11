@@ -39,3 +39,6 @@ a = Employee()
 b = Programmer()
 
 print(a.company, b.company)
+
+#Types of inheritance
+#Single Inheritance
