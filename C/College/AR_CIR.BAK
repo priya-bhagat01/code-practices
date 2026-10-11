@@ -1,0 +1,16 @@
+//Program to calculate Area and Circumference of Circle
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int r;
+float Area,Circumference;
+clrscr();
+printf("Enter radius of Circle: ");
+scanf("%d",&r);
+Area = 3.142*r*r;
+Circumference = 2*3.142*r;
+printf("The Area of Circle s %f",Area);
+printf("\nThe Circumference of Circle is s %f",Circumference);
+getch();
+}
