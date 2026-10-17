@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="planner">
+
+    <!-- DAY 1: structure (HTML only) -->
+    <header class="top">
+      <h1>My Project Planner</h1>
+
+      <label class="color-pick">
+        Theme colour
+        <input type="color" id="colorPicker" value="#5b4bdb">
+      </label>
+    </header>
+
+    <section class="stats">
+      <div class="stat">
+        <span class="stat-number" id="totalCount">0</span>
+        <span class="stat-label">Total tasks</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" id="doneCount">0</span>
+        <span class="stat-label">Completed</span>
+      </div>
+    </section>
+
+    <div class="progress">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <form id="taskForm" class="add-task">
+      <input type="text" id="taskInput" placeholder="What do you need to do?" required>
+      <button type="submit">Add task</button>
+    </form>
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <p id="emptyMessage" class="empty">No tasks yet. Add your first one above.</p>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
