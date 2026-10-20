@@ -1,0 +1,219 @@
+/* ---------- DAY 2: styling ---------- */
+
+/* 1. Variables: change --accent and the whole app changes colour */
+:root {
+  --accent: #5b4bdb;
+  --accent-soft: color-mix(in srgb, var(--accent) 12%, white);
+  --accent-dark: color-mix(in srgb, var(--accent) 80%, black);
+  --bg: #f4f5fb;
+  --card: #ffffff;
+  --text: #1f2230;
+  --muted: #7a7f95;
+  --radius: 14px;
+}
+
+/* 2. Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* 3. The planner card */
+.planner {
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--card);
+  border-radius: 20px;
+  padding: 1.75rem;
+  box-shadow: 0 10px 40px rgba(30, 30, 80, 0.08);
+  border-top: 8px solid var(--accent);
+}
+
+/* 4. Header */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: var(--accent-dark);
+}
+
+.color-pick {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.color-pick input {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* 5. Stats */
+.stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  flex: 1;
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* 6. Progress bar */
+.progress {
+  height: 10px;
+  background: var(--accent-soft);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+/* 7. Add task form */
+.add-task {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--accent-soft);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  outline: none;
+}
+
+.add-task input:focus {
+  border-color: var(--accent);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.add-task button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.add-task button:hover {
+  background: var(--accent-dark);
+}
+
+/* 8. Task list */
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--accent-soft);
+  border-radius: var(--radius);
+}
+
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+/* completed state: JS adds the class "done" */
+.task.done {
+  background: var(--accent-soft);
+}
+
+.task.done .task-text {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.task input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+.delete-btn:hover {
+  background: #fde8e8;
+  color: #d33;
+}
+
+.empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 1.5rem 0 0.5rem;
+}
+
+/* 9. Small screens */
+@media (max-width: 480px) {
+  .planner {
+    padding: 1.25rem;
+  }
+}
